@@ -15,8 +15,8 @@ const Home = () => {
 
         <div>
             <Banner></Banner>
-            
-            <div className="grid md:grid-cols-3 gap-5 mt-5">
+            <h2 className="text-6xl text-center my-10"> Book</h2>
+            <div className="grid md:grid-cols-3 gap-5 my-10 ">
                 {
                     books.map(book=><Bools key={book.id} book={book}></Bools>)
                 }

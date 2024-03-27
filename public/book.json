@@ -4,12 +4,12 @@
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/bPyGF7n/kindpng-1064993.png",
-        "review": "A timeless classic that delves into the complexities of the American Dream.",
+        "review": "Classic delving into American Dream complexities. Captivating characters and themes resonate throughout, offering profound insights into society.",
         "totalPages": 180,
         "rating": 4.5,
         "category": "Fiction",
         "tags": [
-            "Classic",
+            
             "Romance",
             "Tragedy"
         ],
@@ -20,13 +20,13 @@
         "bookId": 2,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "image": "https://i.ibb.co/GR3G0TL/kindpng-5624060-1.png",
-        "review": "A poignant exploration of racial injustice and moral growth.",
+        "image": "https://i.ibb.co/VgV0Vrd/pngwing-1-1.png",
+        "review": "Poignant exploration of racial injustice. Atticus Finch's moral integrity and Scout's innocence add depth to this enduring masterpiece.",
         "totalPages": 336,
         "rating": 4.8,
-        "category": "Fiction",
+        "category": "Social Justice",
         "tags": [
-            "Classic",
+            
             "Social Justice",
             "Coming of Age"
         ],
@@ -38,14 +38,14 @@
         "bookName": "1984",
         "author": "George Orwell",
         "image": "https://i.ibb.co/K2PsYx7/kindpng-7318921.png",
-        "review": "A chilling portrayal of a dystopian society and the power of surveillance.",
+        "review": "Chilling portrayal of dystopian surveillance. Orwell's cautionary tale remains relevant, urging vigilance against totalitarianism and threats to individual freedom.",
         "totalPages": 328,
         "rating": 4.7,
         "category": "Fiction",
         "tags": [
             "Dystopian",
-            "Political",
-            "Science Fiction"
+            "Political"
+            
         ],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
@@ -55,12 +55,12 @@
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/v4QtFDq/kindpng-81724-1.png",
-        "review": "An iconic coming-of-age novel that captures the essence of teenage rebellion.",
+        "review": "Iconic teenage rebellion captured. Holden Caulfield's voice resonates with authenticity, making this a timeless portrayal of adolescence and societal disillusionment.",
         "totalPages": 224,
         "rating": 4.4,
         "category": "Fiction",
         "tags": [
-            "Classic",
+            
             "Coming of Age",
             "Psychological"
         ],
@@ -72,12 +72,12 @@
         "bookName": "The Hitchhiker's Guide to the Galaxy",
         "author": "Douglas Adams",
         "image": "https://i.ibb.co/NxMJYDX/kindpng-4945926-1.png",
-        "review": "A hilariously absurd journey through space and time.",
+        "review":"Absurd journey through space and time. Adams' wit and imagination shine, crafting a hilarious adventure that satirizes human nature and cosmic absurdity.",
         "totalPages": 224,
         "rating": 4.6,
         "category": "Science Fiction",
         "tags": [
-            "Humor",
+            
             "Adventure",
             "Satire"
         ],
@@ -89,13 +89,13 @@
         "bookName": "Harry Potter and the Sorcerer's Stone",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/ZX7n7GL/kindpng-2592315-1.png",
-        "review": "A captivating introduction to the magical world of Hogwarts.",
+        "review":"Timeless love and societal growth tale. Austen's sharp wit and memorable characters highlight societal norms and the complexity of human relationships.",
         "totalPages": 320,
         "rating": 4.9,
         "category": "Fantasy",
         "tags": [
             "Magic",
-            "Adventure",
+            
             "Young Adult"
         ],
         "publisher": "Bloomsbury Publishing",
@@ -106,14 +106,14 @@
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/GR3G0TL/kindpng-5624060-1.png",
-        "review": "A timeless tale of love, societal norms, and personal growth.",
+        "review":"Captivating introduction to magical world. Rowling's storytelling prowess and imaginative world-building make this a beloved classic for all ages.",
         "totalPages": 432,
         "rating": 4.7,
         "category": "Classic Literature",
         "tags": [
             "Romance",
-            "Social Commentary",
-            "Satire"
+            "Social Commentary"
+            
         ],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
@@ -123,12 +123,12 @@
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/64BXGbf/kindpng-2193744-1.jpg",
-        "review": "An enchanting adventure that introduces readers to Middle-earth.",
+        "review": "Timeless love and societal growth tale. Austen's sharp wit and memorable characters highlight societal norms and the complexity of human relationships.",
         "totalPages": 310,
         "rating": 4.8,
         "category": "Fantasy",
         "tags": [
-            "Adventure",
+           
             "Magic",
             "Quest"
         ],
@@ -146,8 +146,8 @@
         "category": "Fantasy",
         "tags": [
             "Magic",
-            "Romance",
-            "Mystery"
+            "Romance"
+            
         ],
         "publisher": "Doubleday",
         "yearOfPublishing": 2011

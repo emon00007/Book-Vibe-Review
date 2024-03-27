@@ -1,25 +1,30 @@
+import { MdOutlineStarRate } from "react-icons/md";
+import { Link } from "react-router-dom";
 
+const Bools = ({ book }) => {
+    const { bookId, image, bookName, author, category, rating, tags } = book
 
-const Bools = ({book}) => {
-    const {bookId,image}=book
-   
     return (
-        
-        <div className="card  bg-base-100 shadow-xl">
+
+        <Link to={`/details/${bookId}`}><div className="card  bg-base-100 shadow-xl">
 
         <figure><img className="mt-5 rounded-md" src={image} alt="Shoes" /></figure>
         <div className="card-body">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div> 
-            <div className="badge badge-outline">Products</div>
-          </div>
+            <div className="flex justify-between ">
+                {
+                    tags.map((tag, index) => (
+                        <div key={index} ><p  className="bg-gray-100 p-1 px-5 rounded-xl">{tag}</p></div>
+                    ))
+                }
+            </div>
+            <h2 className="card-title">{bookName}</h2>
+            <p>by:{author}</p>
+            <div className=" grid md:grid-cols-2 ">
+                <div className="  ">{category}</div>
+                <div className="flex gap-3 ">{rating}<MdOutlineStarRate className="text-2xl"></MdOutlineStarRate></div>
+            </div>
         </div>
-      </div>
+    </div></Link>
     );
 };
 

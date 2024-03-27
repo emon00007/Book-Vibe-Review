@@ -1,7 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveBookReadDetails } from "../Utlite/localStroge";
+import { getBookReadDetails, saveBookReadDetails } from "../Utlite/localStroge";
+import { getBookWishDetails,saveBookWishDetails } from "../Utlite/localStorageWish";
 
 
 
@@ -10,13 +11,40 @@ const BookDetails = () => {
     const { id } = useParams()
 
     const handelAddWishlist = () => {
+        const readData = getBookReadDetails()
+        const WishData = getBookWishDetails()
+        if(!readData.includes(idInt)&& !WishData.includes(idInt)){
+            
+            saveBookWishDetails(idInt);
+            toast('you have add sucessfully')
+        }
+        else if(WishData.includes(idInt))
+        {
+            
+            toast.error('you have already added to wishlist')
+        }
+        else{
+            toast.error('you have already read')
+        }
         
-        toast('you have add sucessfully')
+    }
+    const handelAddRead  = () => {
+        const readData = getBookReadDetails()
+        // const WishData = getBookWishDetails()
+        if(!readData.includes(idInt)){
+            saveBookReadDetails(idInt);
+            toast('you have add sucessfully')
+        }
+        else{
+            toast.error('you have already add to read')
+        }
+        
     }
 
-    const handelAddRead = () => {
-        saveBookReadDetails(idInt)
-    }
+    // const handelAddRead = () => {
+
+    //     saveBookReadDetails(idInt)
+    // }
     const idInt = parseInt(id)
     const book = books.find(book => book.bookId === idInt)
     const { image, bookName, author, category, review, tags, totalPages, yearOfPublishing, publisher, rating } = book
@@ -46,7 +74,7 @@ const BookDetails = () => {
                     <p>Rating:<span>{rating}</span></p>
 
                     <div className="flex gap-20">
-                        <button onClick={handelAddRead} className="btn btn-primary">Read</button>
+                        <button onClick={handelAddRead } className="btn btn-primary">Read</button>
                         <button onClick={handelAddWishlist} className="btn btn-primary">Wishlist</button>
                         <ToastContainer />
                     </div>

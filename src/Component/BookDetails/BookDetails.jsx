@@ -48,7 +48,7 @@ const BookDetails = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
-                <img src={image} className="w-96 rounded-lg shadow-2xl" />
+                <img src={image} className="md:w-96 rounded-lg shadow-2xl" />
                 <div className="md:p-20">
                     <h1 className="text-5xl font-bold ">{bookName}</h1>
                     <h3>By:{author}</h3>
@@ -56,7 +56,7 @@ const BookDetails = () => {
                     <h3 className="text-2xl">{category}</h3>
                     <hr className="border-[1px]  border-black my-2" />
                     <p className="py-4">Review:{review}</p>
-                    <div className=" flex gap-2"><span className="text-2xl ">Tags</span><div className="grid grid-cols-2 gap-10 ">
+                    <div className=" flex gap-2"><span className="text-2xl ">Tags</span><div className="grid grid-cols-2  gap-10 ">
                         {
                             tags.map((tag, index) => (
                                 <div key={index} ><p className="bg-gray-200 p-1 px-5 rounded-xl">{tag}</p></div>
@@ -70,8 +70,8 @@ const BookDetails = () => {
                     <p>Rating:<span>{rating}</span></p>
 
                     <div className="flex gap-20">
-                        <button onClick={handelAddRead } className="btn btn-primary">Read</button>
-                        <button onClick={handelAddWishlist} className="btn btn-primary">Wishlist</button>
+                        <button onClick={handelAddRead } className="btn btn-ghost px-5 border border-black">Read</button>
+                        <button onClick={handelAddWishlist} className="btn bg-[#50B1C9] px-5 text-white">Wishlist</button>
                         <ToastContainer />
                     </div>
                 </div>

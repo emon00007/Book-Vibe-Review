@@ -5,6 +5,7 @@ const Navbar = () => {
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/ListedBooks">Listed Books</NavLink ></li>
     <li><NavLink to="/PagesRead">Pages to Read</NavLink ></li>
+    <li><NavLink to="/Contact">Contact</NavLink ></li>
     </>
     return (
         <div className="navbar bg-base-100">

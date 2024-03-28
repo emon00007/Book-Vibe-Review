@@ -1,5 +1,6 @@
 import { MdOutlineStarRate } from "react-icons/md";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Bools = ({ book }) => {
     const { bookId, image, bookName, author, category, rating, tags } = book
@@ -27,5 +28,7 @@ const Bools = ({ book }) => {
     </div></Link>
     );
 };
-
+Bools.propTypes = {
+    book: PropTypes.object.isRequired
+}
 export default Bools;

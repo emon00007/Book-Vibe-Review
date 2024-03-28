@@ -54,8 +54,8 @@ const ListedBooks = () => {
             
             <Tabs>
                 <TabList>
-                    <Tab>Title 1</Tab>
-                    <Tab>Title 2</Tab>
+                    <Tab>Read Books</Tab>
+                    <Tab>Wishlist BooksTitle 2</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -66,9 +66,7 @@ const ListedBooks = () => {
                         
                     }
                   </div>
-                   
-                   
-
+          
                 </TabPanel>
                 <TabPanel>
                 <div className="">

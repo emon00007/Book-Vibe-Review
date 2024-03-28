@@ -14,7 +14,7 @@ const BookDetails = () => {
         const readData = getBookReadDetails()
         const WishData = getBookWishDetails()
         if(!readData.includes(idInt)&& !WishData.includes(idInt)){
-            
+            console.log(readData)
             saveBookWishDetails(idInt);
             toast('you have add sucessfully')
         }
@@ -30,7 +30,6 @@ const BookDetails = () => {
     }
     const handelAddRead  = () => {
         const readData = getBookReadDetails()
-        // const WishData = getBookWishDetails()
         if(!readData.includes(idInt)){
             saveBookReadDetails(idInt);
             toast('you have add sucessfully')
@@ -41,10 +40,7 @@ const BookDetails = () => {
         
     }
 
-    // const handelAddRead = () => {
-
-    //     saveBookReadDetails(idInt)
-    // }
+  
     const idInt = parseInt(id)
     const book = books.find(book => book.bookId === idInt)
     const { image, bookName, author, category, review, tags, totalPages, yearOfPublishing, publisher, rating } = book

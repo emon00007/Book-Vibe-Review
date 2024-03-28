@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { LiaUserFriendsSolid } from "react-icons/lia";
 import { MdOutlineLibraryBooks } from "react-icons/md";
-
+import PropTypes from 'prop-types';
 const ReadsBooks = ({book}) => {
-    const {bookId, image, bookName, author, category, review, tags, totalPages, yearOfPublishing, publisher, rating }=book
+    const {bookId, image, bookName, author, category,  tags, totalPages, yearOfPublishing, publisher, rating }=book
     return (
         
         <div className="hero  bg-stone-100 shadow-lg  rounded-lg justify-start">
@@ -45,5 +45,7 @@ const ReadsBooks = ({book}) => {
     
     );
 };
-
+ReadsBooks.propTypes = {
+    book: PropTypes.object.isRequired
+}
 export default ReadsBooks;

@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { LiaUserFriendsSolid } from "react-icons/lia";
 import { MdOutlineLibraryBooks } from "react-icons/md";
+import PropTypes from 'prop-types';
 
 const WishList = ({book}) => {
     console.log(book)
-    const {bookId, image, bookName, author, category, review, tags, totalPages, yearOfPublishing, publisher, rating }=book
+    const {bookId, image, bookName, author, category,  tags, totalPages, yearOfPublishing, publisher, rating }=book
     return (
         
         <div>
@@ -48,5 +49,7 @@ const WishList = ({book}) => {
     
     );
 };
-
+WishList.propTypes = {
+    book: PropTypes.object.isRequired
+}
 export default WishList;

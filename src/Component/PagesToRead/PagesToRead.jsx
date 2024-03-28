@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { getBookReadDetails } from '../Utlite/localStroge';
 import { useLoaderData } from 'react-router-dom';
-import { data } from 'autoprefixer';
+// import { data } from 'autoprefixer';
 const PagesToRead = () => {
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -34,7 +34,7 @@ const {totalPages,bookName}=dataa
     };  
     return (
 <BarChart
-      width={1000}
+      width={500}
       height={300}
       data={dataa}
       margin={{

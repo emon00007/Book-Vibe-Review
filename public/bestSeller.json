@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/mJw5KxJ/9781949846430.jpg"
+    },
+    {
+      "id": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/QFWSgRN/book-cover-To-Kill-a-Mockingbird-many-1961.webp"
+    },
+    {
+      "id": 3,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/JRQLZZr/book-75042021-07-08-1625718517.jpg"
+    },
+    {
+      "id": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/GTVvSwQ/243a0ba33adbee20d3ed689fbf712ec8-jd-salinger-holden-caulfield.jpg"
+    },
+    {
+      "id": 5,
+      "bookName": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "image": "https://i.ibb.co/Pt9ZRdK/p35755-p-v8-am.jpg"
+    }
+  ]
+  

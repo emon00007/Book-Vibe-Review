@@ -10,6 +10,7 @@ import PagesToRead from './Component/PagesToRead/PagesToRead';
 import ErrorPage from './Component/ErrorPage/ErrorPage';
 import BookDetails from './Component/BookDetails/BookDetails';
 import Footer from './Component/Footer/Footer';
+import BestSeller from './Component/BestSeller/BestSeller';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path:"/Contact",
         element:<Footer></Footer>
+      },
+      {
+        path:"/BestSeller",
+        element:<BestSeller></BestSeller>,
+        // loader:()=>fetch("/bestSeller.json")
       }
     ]
   },
